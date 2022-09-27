@@ -11,6 +11,7 @@ function salvar(titulo, prioridade) {
 }
 
 function buscar () {
-    return JSON.parse(
+    listar_tarefas = JSON.parse(
         localStorage.getItem('tarefas') || '[]'
+    return listar_tarefas
 )};
