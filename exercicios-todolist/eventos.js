@@ -31,8 +31,8 @@ function addTarefa() {
         return;
     }
 
-    if(true === lista_Tarefas.includes(titulo)) {
-        alert('tarefa existente')
+    if (buscar().some(tarefa => titulo === tarefa.titulo) === true) {
+        alert('Tarefa já inclusa!')
         return;
     }
 
@@ -51,3 +51,5 @@ function addTarefa() {
 
 //vai acontecer assim que o usuario entrar na pagina
 listarTarefas()
+
+//Ta funcionando o/

@@ -10,8 +10,8 @@ function salvar(titulo, prioridade) {
     localStorage.setItem('tarefas', JSON.stringify(dados))
 }
 
-function buscar () {
-    listar_tarefas = JSON.parse(
-        localStorage.getItem('tarefas') || '[]'
-    return listar_tarefas
-)};
+function buscar(){
+    return JSON.parse(
+        localStorage.getItem('tarefas') || '[]');
+}
+   
