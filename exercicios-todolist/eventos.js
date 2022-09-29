@@ -51,5 +51,5 @@ function addTarefa() {
 
 //vai acontecer assim que o usuario entrar na pagina
 listarTarefas()
-
+atualizarQuantidade()
 //Ta funcionando o/
